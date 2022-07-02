@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Librairie.fr</title>
+</head>
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="./img/logo.jpg" alt="logo" class="ms-5 me-3 logo" srcset="">
+                <span class="brand-txt">Librairie.fr</span>
+              </a>
+              <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ms-auto me-5">
+                  <li class="nav-item">
+                    <a class="nav-link mx-0 mx-md-2 mx-lg-3 mx-xl-4 active" aria-current="page" href="#news">Les nouveautés</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-0 mx-md-2 mx-lg-3 mx-xl-4" href="#best-seller">Best seller</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-0 mx-md-2 mx-lg-3 mx-xl-4">Ebook</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-0 mx-md-2 mx-lg-3 mx-xl-4">Livres d'occasion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-0 mx-md-2 mx-lg-3 mx-xl-4">
+                      <i class="bi bi-bag-fill"></i>
+                      <span class="cart-txt ps-2">Panier</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+    <!-- CARROUSSEL -->
+
+    <div id="carousel-book" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-book" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+          <button type="button" data-bs-target="#carousel-book" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#carousel-book" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="./img/img-01.jpg" class="d-block w-100 img-fluid" alt="Image enfant">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Des livres pour la jeunesse</h1>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/img-02.jpg" class="d-block w-100 img-fluid" alt="Image bibliothèque">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Des livres d'occasion</h1>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/img-03.jpg" class="d-block w-100 img-fluid" alt="Image librairie">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Des milliers de livres à bas prix</h1>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev text-white" type="button" data-bs-target="#carousel-book" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-book" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </header>
+    
+    <main>
+        <div class="container">
+          <!-- ******************** SEARCH ******************** -->
+          <section class="search">
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+              <input type="text" class="form-control shadow-none" placeholder="Rechercher un livre..." aria-label="Rechercher" aria-describedby="Rechercher un livre">
+            </div>
+            <!-- <i class="bi bi-search"></i>
+            <input placeholder="Rechercher un livre..." type="text" /> -->
+          </section>
+  
+          <!-- ******************** NOVELTY ******************** -->
+          <section id="news" class="row gx-0 last-info pt-5 pb-2 anchor">
+            <h2 class="text-center mb-5">Les nouveautés</h2>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/new-01.webp" class="card-img-top img-fluid h-100" alt="Livre: Au printemps des monstres">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Au printemps des monstres</h5>
+                  <h6 class="pb-5">Philippe Jaenada</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    Ce n'est pas de la tarte à résumer, cette histoire. Il faut
+                    procéder calmement. C'est une histoire vraie, comme on dit. Un
+                    garçon de onze ans est enlevé à Paris un soir du printemps
+                    1964. Luc Taron. (Si vous préférez la découvrir dans le livre,
+                    l'histoire, ne lisez pas la suite : stop ! ) On retrouve son
+                    corps le lendemain dans une forêt de banlieue. Il a été
+                    assassiné sans raison apparente. Pendant plus d'un mois, un
+                    enragé inonde les médias et la police de lettres de
+                    revendication démentes, signées " L'Etrangleur " ; il adresse
+                    même aux parents de l'enfant, horrifiés, des mots ignobles,
+                    diaboliques, cruels.<br>
+                    Il est enfin arrêté. C'est un jeune homme banal, un infirmier.
+                    Il avoue le meurtre, il est incarcéré et mis à l'écart de la
+                    société pour le reste de sa vie. Fin de l'histoire. Mais bien
+                    sûr, si c'était aussi simple, je n'aurais pas passé quatre ans
+                    à écrire ce gros machin (je ne suis pas fou). Dans cette
+                    société naissante qui deviendra la nôtre, tout est trouble,
+                    tout est factice. Tout le monde truque, ment, triche.<br>
+                    Sauf une femme, un point de lumière. Et ce qu'on savait se
+                    confirme : les pervers, les fous, les odieux, les monstres ne
+                    sont pas souvent ceux qu'on désigne.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <span class="ps-2">7 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">18,90 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i> Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/new-02.webp" class="card-img-top img-fluid h-100" alt="Livre: Premier sang">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Premier sang</h5>
+                  <h6 class="pb-5">Amélie Nothomb</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    "Il ne faut pas sous-estimer la rage de survivre." Sous la
+                    forme d’un conte, Amélie Nothomb raconte la vie de Patrick,
+                    son père, doux enfant angélique qui, jeune adulte, devra se
+                    confronter à la mort. Un magnifique hommage à la figure
+                    paternelle mais aussi à un héros de l’ombre, diplomate à la
+                    carrière hors norme.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span class="ps-2">8 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">16,50 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i> Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/new-03.webp" class="card-img-top img-fluid h-100" alt="Livre: La Commode aux tiroirs de couleurs">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">La Commode aux tiroirs de couleurs</h5>
+                  <h6 class="pb-5">Olivia Ruiz</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    "Parce que c'est ça que je veux que tu retiennes. Nos
+                    couleurs. Chaudes, franches. Je veux que ces femmes si
+                    différentes, si vivantes, si complexes qui composent ton arbre
+                    généalogique puissent t'inspirer et t'aider à savoir qui tu
+                    es, le fruit de quels voyages et de quelles passions". A la
+                    mort de Rita, surnommée "l'Abuela" , sa petite-fille hérite de
+                    l'intrigante commode qui avait jadis nourri toute sa curiosité
+                    et son imagination enfantines.<br>
+                    Le temps d'une nuit, ouvrant ses dix tiroirs, elle découvre
+                    les secrets qui ont scellé le destin de plusieurs générations
+                    de femmes, entre l'Espagne et la France, de la dictature
+                    franquiste à nos jours. Dans ce brillant premier roman Olivia
+                    Ruiz révèle son formidable talent de conteuse et nous offre
+                    une fresque flamboyante sur l'exil Un coup d'éclat et un coup
+                    de maître. Le Point. Une fable habitée de fantômes, de désirs,
+                    de délires, d'absolu.<br>
+                    Un récit ardent. Le Monde des livres. Un texte délicat,
+                    poétique et poignant. RTL.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="ps-2">2 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">6,90 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i>Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/new-04.webp" class="card-img-top img-fluid h-100" alt="Livre: Le loup qui voulait aller à l'école">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Le loup qui voulait aller à l'école</h5>
+                  <h6 class="pb-5">Orianne Lallemand, Eléonore Thuillier</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    Voici un petit dossier de lecture pour la Moyenne Section en
+                    lecture accompagnée ou à partir du CP en lecture autonome,
+                    avec ce récit "Le loup qui voulait aller à l'école"
+                    <br>
+                    Synopsis : Loup n'est jamais allé à l'école, mais il a
+                    tellement envie d'y aller... Suivez Loup et ses amis dans la
+                    recherche de ce qu'est l'école idéale !
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span class="ps-2">3 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">9,40 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i>Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/new-05.webp" class="card-img-top img-fluid h-100" alt="Livre: La clé de votre énergie">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">La clé de votre énergie</h5>
+                  <h6 class="pb-5">Natacha Calestrémé</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    "Je suis vidé" : qui n'a jamais ressenti cette perte d'énergie
+                    ? Et si nos problèmes de santé étaient l'expression d'émotions
+                    douloureuses ? Et si les épreuves que nous traversons étaient
+                    dues à nos peurs, nos blocages, nos culpabilités ? Et si nos
+                    blessures remontaient à notre passé, proche ou lointain, voire
+                    à un héritage ? (un événement antérieur à notre naissance)
+                    Cela peut cesser et cela va cesser ! Je vous en donne la clé.
+                    Grâce à ces 22 protocoles (grâce aux 22 protocoles que vous
+                    trouverez dans ce livre), vous allez réactiver votre potentiel
+                    et enfin retrouver votre pleine énergie. Le corps médical en
+                    parle : Un ouvrage audacieux et authentique. Pr Gérard
+                    Ostermann, Médecine interne, Psychothérapeute Un livre
+                    concret, pratique, qui sera utile à beaucoup de gens. Jacques
+                    Roques, Psychothérapeute, cofondateur d'EMDR France Un
+                    fantastique outil de travail sur soi et de guérison. Dr.
+                    Patrick Jouhaud, Médecin ostéopathe Natacha Calestrémé nous
+                    offre le pouvoir de devenir autonome. J'ai été touché par la
+                    justesse de son approche. Dr. Jean Sandretto, Psychiatre
+                    Natacha Calestrémé est journaliste et réalisatrice.
+                    Spécialisée dans le domaine de la santé et de l'environnement,
+                    elle a été amenée à interviewer des énergéticiens, des
+                    guérisseurs, des médiums et des chamanes. Après de multiples
+                    épreuves, elle a mis en pratique les techniques de ces
+                    thérapeutes un peu spéciaux. Cela a changé sa vie. Depuis,
+                    elle propose ces protocoles dans des ateliers qui rencontrent
+                    un grand succès auprès du public et même de médecins. Elle
+                    partage dans cet ouvrage tout ce qui lui a permis de se
+                    transformer.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span class="ps-2">9 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">18,90 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i>Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/new-06.webp" class="card-img-top img-fluid h-100" alt="Livre: Le trône des sept îles">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Le trône des sept îles</h5>
+                  <h6 class="pb-5">Adalyn Grace</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    Dans un royaume troublé par les secrets et la trahison et où
+                    le danger rôde sous la mer, une princesse va devoir se battre
+                    pour revendiquer son trône avant que tout ne soit perdu...
+                    C'est le grand jour pour la princesse Amora. Fille unique de
+                    la famille Montara qui dirige le royaume de Visidia, elle va
+                    devoir assoir sa position d'héritière du trône en effectuant
+                    une démonstration de sa magie devant son peuple. Mais quand le
+                    rite de passage tourne au désastre, la jeune femme est forcée
+                    de fuir. Elle va alors faire la rencontre de Bastian, un
+                    mystérieux pirate avec lequel elle va passer un marché.
+                    Ensemble, ils vont parcourir les mers du royaume, pleines de
+                    merveilles et de dangers avec pour objectif de stopper
+                    l'émergence d'une nouvelle magie destructrice. Pour la
+                    vaincre, Amora devra affronter des monstres légendaires,
+                    croiser le chemin d'une sirène redoutable et même gérer un
+                    passager inattendu... Si elle échoue, elle mettra en péril le
+                    destin de Visidia et perdra la couronne des sept îles à tout
+                    jamais.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <span class="ps-2">6 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">10,90 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i>Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/new-07.webp" class="card-img-top img-fluid h-100" alt="Livre: Serpent et Dove">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Serpent &amp; Dove</h5>
+                  <h6 class="pb-5">Shelby Mahurin</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    De la magie, des sorcières, un choc fantasy de sorcellerie et
+                    d'amour interdit signé par l'incroyable et talentueuse Shelby
+                    Mahurin. Serpent &amp; Dove est le 1er tome d'une trilogie qui
+                    va vous envouter ! Il y a deux ans, Louise a fui son clan et
+                    s'est réfugiée dans la ville de Césarine où les sorcières
+                    comme elle sont craintes, chassées et brûlées. La jeune femme
+                    a renoncé à la magie et vit désormais de petits larcins. Alors
+                    qu'elle prépare le vol d'une bague magique très rare, les
+                    évènements vont s'enchaîner pour tout faire basculer dans le
+                    chaos. De son côté, Reid, un Chasseur assermenté par l'Eglise,
+                    vit sa vie selon un seul principe : ne pas laisser une seule
+                    sorcière en vie. Son chemin n'aurait jamais dû croiser celui
+                    de Louise, mais un concours de circonstances va les rapprocher
+                    malgré eux et les contraindre à une union impossible et
+                    inattendue : le saint mariage. La guerre entre les sorcières
+                    et l'Eglise est ancienne et les dangereux ennemis de Louise
+                    représentent une terrible menace. Partagée entre ses
+                    sentiments croissants et sa nature, la jeune femme va devoir
+                    faire un choix entre le coeur et la raison.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span class="ps-2">11 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">17,95 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i>Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/new-08.webp" class="card-img-top img-fluid h-100" alt="Livre: My Hero Academia">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">My Hero Academia</h5>
+                  <h6 class="pb-5">Kohei Horikoshi</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    Retrouvez les super-héros du manga phénomène My Hero Academia
+                    ! Face à Tomura, désormais capable de détruire une ville d'un
+                    simple geste de la main et obsédé par l'idée de récupérer le
+                    One for All, seul l'alter d'Eraser Head offre une lueur
+                    d'espoir... Malheureusement, impossible pour la plupart des
+                    héros de se joindre au combat ! Alors que Deku et Katsuki,
+                    déterminés à stopper l'héritier d'All for One, font irruption
+                    sur le champ de bataille, c'est le colossal Gigantomakhia que
+                    les autres élèves de Yuei vont devoir affronter...
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi-star-half"></i>
+                    <span class="ps-2">8 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">9,90 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i>Commander</a>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <!-- ************** BEST SELLER ********************** -->
+          <br>
+          <section id="best-seller" class="row gx-0 best-seller pt-5 pb-2 anchor my-5">
+            <h2 class="text-center mb-5">Best seller</h2>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/best-seller-01.jpg" class="card-img-top img-fluid h-100" alt="Livre: L’Anomalie">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">L’Anomalie</h5>
+                  <h6 class="pb-5">Hervé Le Tellier</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    Goncourt 2020, L’Anomalie passe en majesté le cap de la
+                    nouvelle année en dominant pour le second mois consécutif le
+                    top des best-sellers de janvier. Avec ce roman, Hervé Le
+                    Tellier, par ailleurs président de l’Oulipo, reste fidèle à
+                    son engagement littéraire en explorant de nouvelles pistes
+                    narratives qui le mènent de l’anticipation au thriller en
+                    passant par le drame et la tragédie. Une œuvre magistrale et
+                    singulière au parcours sans faute qui compile depuis trois
+                    mois les louanges et les succès.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span class="ps-2">3 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">19,95 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i> Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/best-seller-02.jpg" class="card-img-top img-fluid h-100" alt="Livre: La Familia grande">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">La Familia grande</h5>
+                  <h6 class="pb-5">Camille Kouchner</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    Véritable bombe médiatique aux vertus libératrices pour les
+                    victimes d’inceste, La Familia grande se hisse à une salutaire
+                    seconde place du premier top de l'année. D'une plume brillante
+                    et assurée, Camille Kouchner dresse le portrait d'une tribu
+                    bourgeoise, dysfonctionnelle et perverse où, sous couvert
+                    d'ouverture d'esprit, l'enfant est rabaissé au rang d'agrément
+                    sexuel par des adultes qui s'autorisent tout. Au-delà de la
+                    révélation d'un acte ignoble et du silence complice de toutes
+                    celles et ceux qui savaient, c'est encore la notion de
+                    consentement qui est ici posée.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span class="ps-2">4 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">17,50 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i> Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/best-seller-03.jpg" class="card-img-top img-fluid h-100" alt="Livre: mais la vie continue">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">... mais la vie continue</h5>
+                  <h6 class="pb-5">Bernard Pivot</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    "Parce que c'est ça que je veux que tu retiennes. Nos
+                    couleurs. Chaudes, franches. Je veux que ces femmes si
+                    différentes, si vivantes, si complexes qui composent ton arbre
+                    généalogique puissent t'inspirer et t'aider à savoir qui tu
+                    es, le fruit de quels voyages et de quelles passions". A la
+                    mort de Rita, surnommée "l'Abuela" , sa petite-fille hérite de
+                    l'intrigante commode qui avait jadis nourri toute sa curiosité
+                    et son imagination enfantines.<br>
+                    Le temps d'une nuit, ouvrant ses dix tiroirs, elle découvre
+                    les secrets qui ont scellé le destin de plusieurs générations
+                    de femmes, entre l'Espagne et la France, de la dictature
+                    franquiste à nos jours. Dans ce brillant premier roman Olivia
+                    Ruiz révèle son formidable talent de conteuse et nous offre
+                    une fresque flamboyante sur l'exil Un coup d'éclat et un coup
+                    de maître. Le Point. Une fable habitée de fantômes, de désirs,
+                    de délires, d'absolu.<br>
+                    Un récit ardent. Le Monde des livres. Un texte délicat,
+                    poétique et poignant. RTL.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span class="ps-2">8 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">18,90 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i>Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/best-seller-04.jpg" class="card-img-top img-fluid h-100" alt="Livre: Des âmes et des saisons">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Des âmes et des saisons</h5>
+                  <h6 class="pb-5">Boris Cyrulnik</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    Vulgarisateur talentueux, Boris Cyrulnik confirme son aptitude
+                    au succès en intégrant le top des best-sellers de janvier avec
+                    Des âmes et des saisons. Dans ce nouvel essai qui sonde le
+                    passé pour mieux regarder vers l'avenir, le psychiatre
+                    défenseur du déterminisme biologique et de la résilience ouvre
+                    sa réflexion à des problématiques écologiques qui ont toujours
+                    été au centre de ses préoccupations. Une prise de position
+                    douce mais ferme pour que nous, humains, reprenions humblement
+                    notre place dans la nature aux côtés du monde animal.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="ps-2">5 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">20,40 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i>Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/best-seller-05.jpg" class="card-img-top img-fluid h-100" alt="Livre: On va déguster l’Italie">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">On va déguster l’Italie</h5>
+                  <h6 class="pb-5">François-Régis Gaudry</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    De retour en janvier après un petit mois d’absence, l’escapade
+                    gourmande de François-Régis Gaudry reprend à l'identique sa
+                    position dans le top. Cinquième best-seller du mois, On va
+                    déguster l’Italie est un pêle-mêle foisonnant qui répond à
+                    toutes les questions qu'on peut se poser sur les coutumes
+                    culinaires et l'art de vivre transalpin. C'est également un
+                    formidable livre de recettes où sont listés tous les produits
+                    essentiels de la gastronomie italienne.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span class="ps-2">1 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">39,95 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i>Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/best-seller-06.jpg" class="card-img-top img-fluid h-100" alt="Livre: Le parfum des fleurs la nuit">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Le parfum des fleurs la nuit</h5>
+                  <h6 class="pb-5">Leila Slimani</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    Alors qu’on attendait le second volet de sa trilogie entamée
+                    avec Le Pays des autres, Leila Slimani trompe son monde avec
+                    un livre singulier qui déboule sans crier gare à la sixième
+                    place du top de janvier. Rêverie introspective, confession
+                    intime et flânerie littéraire, Le parfum des fleurs la nuit
+                    est le fruit savoureux d'une nuit blanche passée face aux
+                    collections d'art du musée de la Fondation Pinault à Venise.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="ps-2">6 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">17,10 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i>Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/best-seller-07.jpg" class="card-img-top img-fluid h-100" alt="Livre: Les Impatientes">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Les Impatientes</h5>
+                  <h6 class="pb-5">Djaïli Amadou Amal</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    Une toute petite place de perdue pour le Goncourt des lycéens
+                    2020 qui termine en janvier à la septième place du top. Roman
+                    féministe, puissant et engagé, Les Impatientes de Djaïli
+                    Amadou Amal croise les parcours douloureux de trois femmes du
+                    Sahel écrasées et parfois broyées par le poids de traditions
+                    patriarcales archaïques. À travers elles, celle qui a été élue
+                    meilleure romancière africaine 2019 dénonce avec force la
+                    condition féminine dans cette région réculée du continent et
+                    plaide pour l'émancipation par l’éducation.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="ps-2">9 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">16,95 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i>Commander</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+                col col-12 col-md-6 col-lg-4 col-xl-3
+                box
+                d-flex
+                align-items-stretch
+              ">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./img/best-seller-08.jpg" class="card-img-top img-fluid h-100" alt="Livre: Carbone et Silicium">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Carbone &amp; Silicium</h5>
+                  <h6 class="pb-5">Mathieu Bablet</h6>
+                  <p class="card-text clamp-module" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 7;">
+                    Seul représentant BD de janvier, l’album choc de Mathieu
+                    Bablet entre dans le top des best-sellers après avoir été
+                    récompensé du Prix BD Fnac France Inter 2021. Réflexion
+                    transhumaniste face au nihilisme des hommes, Carbone &amp;
+                    Silicium est une épopée d'anticipation à la fois noire et
+                    mélancolique étalée sur plus de trois cent ans où deux robots
+                    à l'intelligence évidemment artificielle deviennent le seul
+                    avenir d'une humanité vouée à s'autodétruire.
+                  </p>
+                  <div class="py-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span class="ps-2">5 votes</span>
+                  </div>
+                  <p class="text-danger fw-bold price">22,90 €</p>
+                  <a href="#" class="btn btn-sm btn-success py-2"><i class="bi bi-bag-plus-fill pe-3"></i>Commander</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer></footer>
+      <script type="text/javascript" src="./js/clamp.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
